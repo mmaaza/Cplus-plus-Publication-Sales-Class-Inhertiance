@@ -134,18 +134,24 @@ void Tape::putdata() const {
 // tester
 int main()
 {
+    // Create objects for Book and Tape
     Book b1;
     Tape t1;
 
+    // Display Book Information
     cout << "Book information: " << endl;
+
+    // Get and Display data for Book
     b1.getdata();
     b1.putdata();
+
+    // Display Audio Tape Information
     cout << endl << "Audio Tape information: " << endl;
     cin.ignore();
+
+    // Get and Display data for Audio Tape
     t1.getdata();
     t1.putdata();
     system("pause");
     return 0;
 }
-
-// End: tester
